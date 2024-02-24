@@ -13,12 +13,22 @@ resto_divisao = (num_resto % 5)
 print(f"O resto da sua divisão é: {resto_divisao}")
 
 # 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
+
+print("Neste exercício você irá multiplicar dois números.")
+num_3 = int(input("Insira o primeiro número:"))
+num_4 = int(input("Insira o segundo número:"))
+
+multiplicacao = num_3 * num_4
+print(f"A multiplicação dos dois números inseridos é: {multiplicacao}")
+
+
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
 
+print("Neste exercício você irá realizar uma divisão inteira do primeiro número pelo segundo.")
 try: 
-    num4 = int(input("Insira um número inteiro, por favor:"))
-    num5 = int(input("Insira um número inteiro, por favor:"))
-    resultado = num4 // num5
+    num_5 = int(input("Insira o primeiro número, por favor:"))
+    num_6 = int(input("Insira o segundo número, por favor:"))
+    resultado = num_5 // num_6
     print(resultado)
 except ZeroDivisionError:
     print("integer division or modulo by zero")
@@ -27,12 +37,47 @@ except KeyboardInterrupt:
 
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
 
+print("Neste exercício você irá multiplicar dois números.")
+num_7 = int(input("Insira o primeiro número:"))
+num_8 = int(input("Insira o segundo número:"))
+multiplicacao = num_7 * num_8
+if multiplicacao != 0:
+    print(f"A multiplicação dos dois números inseridos é: {multiplicacao}")
+else:
+    print("Por favor, rode de novo o programa e insira um número diferente de zero.")
+
 # #### Números de Ponto Flutuante (`float`)
 
 # 6. Escreva um programa que receba dois números flutuantes e realize sua adição.
+    
+num_9 = float(input("Insira um número com vírgula para realizarmos uma adição de números não inteiros."))
+num_10 = float(input("Insira outro número com vírgula para realizarmos uma adição de números não inteiros."))
+if isinstance(num_9, float):
+    if isinstance(num_10, float):
+        soma_float = num_9 + num_10
+        print(f"A soma dos números não inteiros é = {soma_float}")
+    else:
+        print("Insira um número no formato solicitado")
+else:
+    print("Insira um número no formato solicitado")
+
+    
 # 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
+    
+media_float = (soma_float / 2)
+
 # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
+
+numero_base = input("Insira o número que será elevado a potência fornecida em sequência:")
+exponencial = input("Insira a exponencial do número anterior:")
+
+resultado_exponencial = numero_base ** exponencial
+
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
+
+temp_celsius = input("Insira a temperatura em Celsius:")
+
+
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
 
 # #### Strings (`str`)
